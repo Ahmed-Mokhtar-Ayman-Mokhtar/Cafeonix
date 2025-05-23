@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\GitHub\Repos\Cafeonix\Cafeonix\App.xaml
-1219584333
+6245193125
 
-6-502434485
+10-1058682083
 13-1310406943
-MainWindow.xaml;
+MainWindow.xaml;Resources\Page.xaml;Views\HomePage.xaml;Views\MenuPage.xaml;Views\OrderPage.xaml;Views\ReportPage.xaml;
 
-True
+False
 
