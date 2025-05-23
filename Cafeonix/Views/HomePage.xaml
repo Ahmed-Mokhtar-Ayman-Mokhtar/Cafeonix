@@ -10,7 +10,7 @@
 
     <Grid>
         <Border Background="#331505"
-        CornerRadius="20,0,0,20">
+        CornerRadius="0,0,0,20">
             <Button Content="Button" HorizontalAlignment="Left" Margin="400,89,0,0" VerticalAlignment="Top" Height="63" Width="98"/>
         </Border>
     </Grid>

@@ -22,3 +22,6 @@ D:\GitHub\Repos\Cafeonix\Cafeonix\obj\Debug\Cafeonix.csproj.GenerateResource.cac
 D:\GitHub\Repos\Cafeonix\Cafeonix\obj\Debug\Cafeonix.csproj.CoreCompileInputs.cache
 D:\GitHub\Repos\Cafeonix\Cafeonix\obj\Debug\Cafeonix.exe
 D:\GitHub\Repos\Cafeonix\Cafeonix\obj\Debug\Cafeonix.pdb
+D:\GitHub\Repos\Cafeonix\Cafeonix\obj\Debug\Views\LoginWindow.g.cs
+D:\GitHub\Repos\Cafeonix\Cafeonix\obj\Debug\Views\LoginWindow.baml
+D:\GitHub\Repos\Cafeonix\Cafeonix\obj\Debug\App.baml
