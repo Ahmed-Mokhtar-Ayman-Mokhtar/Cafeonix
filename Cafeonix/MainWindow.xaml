@@ -15,7 +15,17 @@
         >
     <Grid>
         <Border Background="#3F1D0C"
-                CornerRadius="20"/>
+                CornerRadius="20"  MouseDown="Window_MouseDown">
+                        <StackPanel Orientation="Horizontal" Height="50" VerticalAlignment="Top">
+                
+            <Button Background="Transparent" Padding="15" HorizontalAlignment="Left" Margin="10,0,0,0" Click="Close_Click" VerticalAlignment="Top" Height="50" Width="50" BorderThickness="0">
+                <Image Source="/Resources/Images/shutdown.png" Stretch="Uniform"/>
+            </Button>
+                <Button Background="Transparent" Padding="15" HorizontalAlignment="Left" Margin="02,0,0,0" Click="Minimize_Click" VerticalAlignment="Top" Height="50" Width="50" BorderThickness="0">
+                <Image Source="/Resources/Images/minus.png" Stretch="Uniform"/>
+            </Button>
+            </StackPanel>
+        </Border>
         <Grid>
         
         <Grid.ColumnDefinitions>
@@ -25,7 +35,7 @@
                 <!-- محتوى الصفحة -->
             </Grid.ColumnDefinitions>
 
-            <Frame x:Name="MainFrame" BorderThickness="0" Grid.Column="0" NavigationUIVisibility="Hidden"/>
+            <Frame x:Name="MainFrame" Height="550" VerticalAlignment="Bottom" BorderThickness="0" Grid.Column="0" NavigationUIVisibility="Hidden"/>
 
             <StackPanel  Grid.Column="1" VerticalAlignment="Stretch">
                 
@@ -43,17 +53,6 @@
                 </StackPanel>
                 
             </StackPanel>
-
-            <StackPanel Orientation="Horizontal" Height="60" VerticalAlignment="Top" MouseDown="Window_MouseDown">
-                
-            <Button Background="Transparent" Padding="15" HorizontalAlignment="Left" Margin="10,0,0,0" Click="Close_Click" VerticalAlignment="Top" Height="60" Width="60" BorderThickness="0">
-                <Image Source="/Resources/Images/shutdown.png" Stretch="Uniform"/>
-            </Button>
-                <Button Background="Transparent" Padding="15" HorizontalAlignment="Left" Margin="02,0,0,0" Click="Minimize_Click" VerticalAlignment="Top" Height="60" Width="60" BorderThickness="0">
-                <Image Source="/Resources/Images/minus.png" Stretch="Uniform"/>
-            </Button>
-            </StackPanel>
-
 
         </Grid>
     </Grid>
