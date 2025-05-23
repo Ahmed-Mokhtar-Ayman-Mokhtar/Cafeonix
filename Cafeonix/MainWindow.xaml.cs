@@ -34,7 +34,7 @@ namespace Cafeonix
             if (string.IsNullOrEmpty(pageUri)) return;
 
             // تحميل الصفحة داخل الـ Frame
-            MainFrame.Source = new Uri(pageUri, UriKind.Relative);
+            MainFrame.Navigate(new Uri(pageUri, UriKind.Relative));
 
             // تغيير ألوان الأزرار
             HighlightButton(clickedButton);

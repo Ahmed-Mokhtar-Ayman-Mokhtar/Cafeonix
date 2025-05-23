@@ -10,6 +10,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Cafeonix.Views
@@ -17,7 +18,7 @@ namespace Cafeonix.Views
     /// <summary>
     /// Interaction logic for ReportPage.xaml
     /// </summary>
-    public partial class ReportPage : Window
+    public partial class ReportPage : Page
     {
         public ReportPage()
         {
