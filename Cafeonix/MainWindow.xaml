@@ -5,8 +5,57 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cafeonix"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        FontFamily="pack://application:,,,/Fonts/#Almarai Bold"
+        FontSize="18"
+        Title="Cafeonix" Height="600" Width="850"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="none" 
+        Background="Transparent"
+        >
     <Grid>
+        <Border Background="#3F1D0C"
+                CornerRadius="20"/>
+        <Grid>
         
+        <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <!-- القائمة الجانبية -->
+                <ColumnDefinition Width="200"/>
+                <!-- محتوى الصفحة -->
+            </Grid.ColumnDefinitions>
+
+            <Frame x:Name="MainFrame" BorderThickness="0" Grid.Column="0" NavigationUIVisibility="Hidden"/>
+
+            <StackPanel  Grid.Column="1" VerticalAlignment="Stretch">
+                
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="200">
+                    <Image Source="/Resources/Images/Caféonix Logo2.png" Width="150" Height="200" Margin="0,05"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="ButtonsPanel">
+
+                    <Button x:Name="home_btn" Content="الصفحة الرئيسية" Background="#3F1D0C" Foreground="#DDC7AB" Tag="Views/HomePage.xaml" Click="NavButton_Click" Width="200" Height="50" BorderThickness="0" />
+                    <Button Content="قائمة المشروبات" Background="#3F1D0C" Foreground="#DDC7AB" Tag="Views/MenuPage.xaml" Click="NavButton_Click" Width="200" Height="50" BorderThickness="0" />
+                    <Button Content="قائمة المشروبات" Background="#3F1D0C" Foreground="#DDC7AB" Tag="Views/OrderPage.xaml" Click="NavButton_Click" Width="200" Height="50" BorderThickness="0" />
+                    <Button Content="قائمة المشروبات" Background="#3F1D0C" Foreground="#DDC7AB" Tag="../ReportPage.xaml" Click="NavButton_Click" Width="200" Height="50" BorderThickness="0" />
+
+                </StackPanel>
+                
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Height="60" VerticalAlignment="Top" MouseDown="Window_MouseDown">
+                
+            <Button Background="Transparent" Padding="15" HorizontalAlignment="Left" Margin="10,0,0,0" Click="Close_Click" VerticalAlignment="Top" Height="60" Width="60" BorderThickness="0">
+                <Image Source="/Resources/Images/shutdown.png" Stretch="Uniform"/>
+            </Button>
+                <Button Background="Transparent" Padding="15" HorizontalAlignment="Left" Margin="02,0,0,0" Click="Minimize_Click" VerticalAlignment="Top" Height="60" Width="60" BorderThickness="0">
+                <Image Source="/Resources/Images/minus.png" Stretch="Uniform"/>
+            </Button>
+            </StackPanel>
+
+
+        </Grid>
     </Grid>
+
 </Window>

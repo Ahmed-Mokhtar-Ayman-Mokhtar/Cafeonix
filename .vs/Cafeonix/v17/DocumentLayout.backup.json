@@ -1,0 +1,135 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GitHub\\Repos\\Cafeonix\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1723910A-7999-4AD4-9DBF-3D159BF57331}|Cafeonix\\Cafeonix.csproj|D:\\GitHub\\Repos\\Cafeonix\\cafeonix\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1723910A-7999-4AD4-9DBF-3D159BF57331}|Cafeonix\\Cafeonix.csproj|solutionrelative:cafeonix\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1723910A-7999-4AD4-9DBF-3D159BF57331}|Cafeonix\\Cafeonix.csproj|D:\\GitHub\\Repos\\Cafeonix\\cafeonix\\views\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1723910A-7999-4AD4-9DBF-3D159BF57331}|Cafeonix\\Cafeonix.csproj|solutionrelative:cafeonix\\views\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1723910A-7999-4AD4-9DBF-3D159BF57331}|Cafeonix\\Cafeonix.csproj|D:\\GitHub\\Repos\\Cafeonix\\cafeonix\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1723910A-7999-4AD4-9DBF-3D159BF57331}|Cafeonix\\Cafeonix.csproj|solutionrelative:cafeonix\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1723910A-7999-4AD4-9DBF-3D159BF57331}|Cafeonix\\Cafeonix.csproj|d:\\github\\repos\\cafeonix\\cafeonix\\views\\orderpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1723910A-7999-4AD4-9DBF-3D159BF57331}|Cafeonix\\Cafeonix.csproj|solutionrelative:cafeonix\\views\\orderpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1723910A-7999-4AD4-9DBF-3D159BF57331}|Cafeonix\\Cafeonix.csproj|D:\\GitHub\\Repos\\Cafeonix\\cafeonix\\views\\reportpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1723910A-7999-4AD4-9DBF-3D159BF57331}|Cafeonix\\Cafeonix.csproj|solutionrelative:cafeonix\\views\\reportpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1723910A-7999-4AD4-9DBF-3D159BF57331}|Cafeonix\\Cafeonix.csproj|D:\\GitHub\\Repos\\Cafeonix\\cafeonix\\views\\menupage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1723910A-7999-4AD4-9DBF-3D159BF57331}|Cafeonix\\Cafeonix.csproj|solutionrelative:cafeonix\\views\\menupage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1723910A-7999-4AD4-9DBF-3D159BF57331}|Cafeonix\\Cafeonix.csproj|D:\\GitHub\\Repos\\Cafeonix\\cafeonix\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1723910A-7999-4AD4-9DBF-3D159BF57331}|Cafeonix\\Cafeonix.csproj|solutionrelative:cafeonix\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReportPage.xaml",
+              "DocumentMoniker": "D:\\GitHub\\Repos\\Cafeonix\\Cafeonix\\Views\\ReportPage.xaml",
+              "RelativeDocumentMoniker": "Cafeonix\\Views\\ReportPage.xaml",
+              "ToolTip": "D:\\GitHub\\Repos\\Cafeonix\\Cafeonix\\Views\\ReportPage.xaml",
+              "RelativeToolTip": "Cafeonix\\Views\\ReportPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-23T12:32:32.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderPage.xaml",
+              "DocumentMoniker": "D:\\GitHub\\Repos\\Cafeonix\\Cafeonix\\Views\\OrderPage.xaml",
+              "RelativeDocumentMoniker": "Cafeonix\\Views\\OrderPage.xaml",
+              "ToolTip": "D:\\GitHub\\Repos\\Cafeonix\\Cafeonix\\Views\\OrderPage.xaml",
+              "RelativeToolTip": "Cafeonix\\Views\\OrderPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-23T12:31:32.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\GitHub\\Repos\\Cafeonix\\Cafeonix\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Cafeonix\\MainWindow.xaml",
+              "ToolTip": "D:\\GitHub\\Repos\\Cafeonix\\Cafeonix\\MainWindow.xaml",
+              "RelativeToolTip": "Cafeonix\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-23T12:19:55.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\GitHub\\Repos\\Cafeonix\\Cafeonix\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Cafeonix\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\GitHub\\Repos\\Cafeonix\\Cafeonix\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Cafeonix\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAiwE8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T06:27:06.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomePage.xaml",
+              "DocumentMoniker": "D:\\GitHub\\Repos\\Cafeonix\\Cafeonix\\Views\\HomePage.xaml",
+              "RelativeDocumentMoniker": "Cafeonix\\Views\\HomePage.xaml",
+              "ToolTip": "D:\\GitHub\\Repos\\Cafeonix\\Cafeonix\\Views\\HomePage.xaml",
+              "RelativeToolTip": "Cafeonix\\Views\\HomePage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-23T04:56:17.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\GitHub\\Repos\\Cafeonix\\Cafeonix\\App.xaml",
+              "RelativeDocumentMoniker": "Cafeonix\\App.xaml",
+              "ToolTip": "D:\\GitHub\\Repos\\Cafeonix\\Cafeonix\\App.xaml",
+              "RelativeToolTip": "Cafeonix\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-23T01:56:22.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MenuPage.xaml",
+              "DocumentMoniker": "D:\\GitHub\\Repos\\Cafeonix\\Cafeonix\\Views\\MenuPage.xaml",
+              "RelativeDocumentMoniker": "Cafeonix\\Views\\MenuPage.xaml",
+              "ToolTip": "D:\\GitHub\\Repos\\Cafeonix\\Cafeonix\\Views\\MenuPage.xaml",
+              "RelativeToolTip": "Cafeonix\\Views\\MenuPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-23T04:56:06.493Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
