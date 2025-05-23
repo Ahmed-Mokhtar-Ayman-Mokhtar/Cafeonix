@@ -1,0 +1,15 @@
+D:\GitHub\Repos\Cafeonix\Cafeonix\bin\Debug\Cafeonix.exe.config
+D:\GitHub\Repos\Cafeonix\Cafeonix\bin\Debug\Cafeonix.exe
+D:\GitHub\Repos\Cafeonix\Cafeonix\bin\Debug\Cafeonix.pdb
+D:\GitHub\Repos\Cafeonix\Cafeonix\obj\Debug\Cafeonix.csproj.AssemblyReference.cache
+D:\GitHub\Repos\Cafeonix\Cafeonix\obj\Debug\MainWindow.g.cs
+D:\GitHub\Repos\Cafeonix\Cafeonix\obj\Debug\App.g.cs
+D:\GitHub\Repos\Cafeonix\Cafeonix\obj\Debug\Cafeonix_MarkupCompile.cache
+D:\GitHub\Repos\Cafeonix\Cafeonix\obj\Debug\Cafeonix_MarkupCompile.lref
+D:\GitHub\Repos\Cafeonix\Cafeonix\obj\Debug\MainWindow.baml
+D:\GitHub\Repos\Cafeonix\Cafeonix\obj\Debug\Cafeonix.g.resources
+D:\GitHub\Repos\Cafeonix\Cafeonix\obj\Debug\Cafeonix.Properties.Resources.resources
+D:\GitHub\Repos\Cafeonix\Cafeonix\obj\Debug\Cafeonix.csproj.GenerateResource.cache
+D:\GitHub\Repos\Cafeonix\Cafeonix\obj\Debug\Cafeonix.csproj.CoreCompileInputs.cache
+D:\GitHub\Repos\Cafeonix\Cafeonix\obj\Debug\Cafeonix.exe
+D:\GitHub\Repos\Cafeonix\Cafeonix\obj\Debug\Cafeonix.pdb
