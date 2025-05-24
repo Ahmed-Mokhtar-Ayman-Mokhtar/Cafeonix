@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Cafeonix.Models
 {
-    class Order
+    public class Order
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
