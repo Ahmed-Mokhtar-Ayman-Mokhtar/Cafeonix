@@ -47,7 +47,7 @@
 
                     <Button x:Name="home_btn" Content="الصفحة الرئيسية" Background="#3F1D0C" Foreground="#DDC7AB" Tag="Views/HomePage.xaml" Click="NavButton_Click" Width="200" Height="50" BorderThickness="0" />
                     <Button Content="قائمة الأصناف" Background="#3F1D0C" Foreground="#DDC7AB" Tag="Views/MenuPage.xaml" Click="NavButton_Click" Width="200" Height="50" BorderThickness="0" />
-                    <Button Content="قائمة المشروبات" Background="#3F1D0C" Foreground="#DDC7AB" Tag="Views/OrderPage.xaml" Click="NavButton_Click" Width="200" Height="50" BorderThickness="0" />
+                    <Button Content="إرشيف الطلبات" Background="#3F1D0C" Foreground="#DDC7AB" Tag="Views/OrderPage.xaml" Click="NavButton_Click" Width="200" Height="50" BorderThickness="0" />
                     <Button Content="قائمة المشروبات" Background="#3F1D0C" Foreground="#DDC7AB" Tag="Views/ReportPage.xaml" Click="NavButton_Click" Width="200" Height="50" BorderThickness="0" />
 
                 </StackPanel>
