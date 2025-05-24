@@ -8,20 +8,19 @@ using System.Threading.Tasks;
 
 namespace Cafeonix.Models
 {
-    public class MenuItem
+    class User
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
+        public int ID { get; set; }
 
         [Required]
         [MaxLength(255)]
-        public string Name { get; set; }
-        public decimal Price { get; set; }
-        public string ImagePath { get; set; }
+        public String Username { get; set; }
 
         [Required]
         [MaxLength(255)]
-        public string Category { get; set; }
+        public String Password { get; set; }
+
     }
 }
