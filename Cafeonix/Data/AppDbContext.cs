@@ -1,13 +1,14 @@
-﻿using System;
+﻿using Cafeonix.Models;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Cafeonix.Models
+namespace Cafeonix.Data
 {
-    class AppDbContext : DbContext
+    public class AppDbContext : DbContext
     {
         public AppDbContext() : base("name=CafeonixDb")
         {

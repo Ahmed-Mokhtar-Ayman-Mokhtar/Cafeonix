@@ -65,12 +65,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Compile Include="Data\AppDbContext.cs" />
+    <Compile Include="Functions\MenuItemFunctions.cs" />
+    <Compile Include="Functions\UserFunctions.cs" />
     <Compile Include="Migrations\202505240516180_InitialCreate.cs" />
     <Compile Include="Migrations\202505240516180_InitialCreate.Designer.cs">
       <DependentUpon>202505240516180_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\AppDbContext.cs" />
     <Compile Include="Models\MenuItem.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\User.cs" />
@@ -161,15 +163,20 @@
     <Resource Include="Resources\Images\minus.png" />
     <Resource Include="Resources\Images\report.png" />
     <Resource Include="Resources\Images\shutdown.png" />
-    <Resource Include="Resources\Images\shutdown_aft.png" />
-    <Resource Include="Resources\Images\shutdown_bef.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Data\" />
     <Folder Include="ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Caffe Mocha.png" />
+    <Resource Include="Resources\Images\Cappuccino.png" />
+    <Resource Include="Resources\Images\Caramel Macchiato.png" />
+    <Resource Include="Resources\Images\Espresso.png" />
+    <Resource Include="Resources\Images\Irish.png" />
+    <Resource Include="Resources\Images\Latte Macchiato.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

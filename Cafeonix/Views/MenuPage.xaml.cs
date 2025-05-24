@@ -1,6 +1,9 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.ObjectModel;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using Cafeonix.Data;
 using Cafeonix.Models;
 
 namespace Cafeonix.Views
@@ -18,29 +21,26 @@ namespace Cafeonix.Views
         {
             InitializeComponent();
 
-            // تهيئة التجميعتين
-            MenuItems = new ObservableCollection<Models.MenuItem>
-            {
-                new Models.MenuItem { Id=1, Name="كابتشينو", Price=2.50m, ImagePath="/Resources/Images/meal.png", Category="قهوة" },
-                new Models.MenuItem { Id=2, Name="لاتيه",     Price=3.00m, ImagePath="/Resources/Images/meal.png",       Category="قهوة" },
-                new Models.MenuItem { Id=3, Name="موكا",       Price=3.50m, ImagePath="/Resources/Images/meal.png",       Category="قهوة" },
-                new Models.MenuItem { Id=4, Name="شاي أخضر",   Price=1.80m, ImagePath="/Resources/Images/meal.png",   Category="شاي"  },
-                new Models.MenuItem { Id=5, Name="كابتشينو", Price=2.50m, ImagePath="/Resources/Images/meal.png", Category="قهوة" },
-                new Models.MenuItem { Id=6, Name="لاتيه",     Price=3.00m, ImagePath="/Resources/Images/meal.png",       Category="قهوة" },
-                new Models.MenuItem { Id=7, Name="موكا",       Price=3.50m, ImagePath="/Resources/Images/meal.png",       Category="قهوة" },
-                new Models.MenuItem { Id=8, Name="شاي أخضر",   Price=1.80m, ImagePath="/Resources/Images/meal.png",   Category="شاي"  },
-                new Models.MenuItem { Id=9, Name="كابتشينو", Price=2.50m, ImagePath="/Resources/Images/meal.png", Category="قهوة" },
-                new Models.MenuItem { Id=10, Name="لاتيه",     Price=3.00m, ImagePath="/Resources/Images/meal.png",       Category="قهوة" },
-                new Models.MenuItem { Id=11, Name="موكا",       Price=3.50m, ImagePath="/Resources/Images/meal.png",       Category="قهوة" },
-                new Models.MenuItem { Id=12, Name="شاي أخضر",   Price=1.80m, ImagePath="/Resources/Images/meal.png",   Category="شاي"  },
-                // أضف المزيد حسب الحاجة...
-            };
-
             CurrentOrder = new ObservableCollection<Models.MenuItem>();
 
-            // نربط البيانات بالـ DataContext
+            try
+            {
+                using (var context = new AppDbContext())
+                {
+                    // قراءة البيانات من قاعدة البيانات إلى القائمة
+                    var items = context.MenuItems.ToList();
+                    MenuItems = new ObservableCollection<Models.MenuItem>(items);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("خطأ في تحميل الأصناف: " + ex.Message);
+                MenuItems = new ObservableCollection<Models.MenuItem>();
+            }
+
             this.DataContext = this;
         }
+
 
         private decimal CalculateTotal()
         {
