@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cafeonix.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,29 +27,24 @@ namespace Cafeonix.Views
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            // مثال تحقق ثابت
-            if (UsernameBox.Text == "123" && PasswordBox.Password == "123")
+            string username = UsernameBox.Text.Trim();
+            string password = PasswordBox.Password;
+
+            using (var context = new AppDbContext())
             {
-                // إنشاء MainWindow
-                var mainWindow = new MainWindow();
+                var user = context.Users.FirstOrDefault(u => u.Username == username && u.Password == password);
 
-                // إعادة تعيين Application.Current.MainWindow إلى النافذة الجديدة
-                Application.Current.MainWindow = mainWindow;
-
-                // عرض MainWindow
-                mainWindow.Show();
-
-                // 4) إغلاق LoginWindow (التي كانت MainWindow سابقاً)
-                this.Close();
-            }
-            else
-            {
-                MessageBox.Show(
-                    "Invalid credentials",
-                    "Login Failed",
-                    MessageBoxButton.OK,
-                    MessageBoxImage.Error
-                );
+                if (user != null)
+                {
+                    var mainWindow = new MainWindow();
+                    Application.Current.MainWindow = mainWindow;
+                    mainWindow.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("اسم المستخدم أو كلمة المرور غير صحيحة", "فشل تسجيل الدخول", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
             }
         }
 
