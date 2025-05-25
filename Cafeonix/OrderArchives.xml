@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<OrderArchives>
+  <Order>
+    <ID>1</ID>
+    <Price>22.50</Price>
+    <Emp>111</Emp>
+    <Time>8:11:33</Time>
+  </Order>
+  <Order>
+    <ID>2</ID>
+    <Price>80.00</Price>
+    <Emp>222</Emp>
+    <Time>2025-05-26      02:49:56</Time>
+  </Order>
+</OrderArchives>

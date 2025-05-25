@@ -13,6 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Cafeonix.ViewModels;
 
 namespace Cafeonix.Views
 {
@@ -37,7 +38,17 @@ namespace Cafeonix.Views
 
                 if (user != null)
                 {
-                    var mainWindow = new MainWindow();
+                    var userViewModel = new UserViewModel
+                    {
+                        Username = user.Username
+                    };
+
+                    var mainViewModel = new MainViewModel(userViewModel);
+                    var mainWindow = new MainWindow
+                    {
+                        DataContext = mainViewModel
+                    };
+
                     Application.Current.MainWindow = mainWindow;
                     mainWindow.Show();
                     this.Close();
