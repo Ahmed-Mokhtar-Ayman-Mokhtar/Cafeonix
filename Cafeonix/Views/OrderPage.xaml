@@ -6,12 +6,33 @@
       xmlns:local="clr-namespace:Cafeonix.Views"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
+      FontFamily="pack://application:,,,/Fonts/#Almarai Bold"
       Title="OrderPage">
 
     <Grid>
         <Border Background="#331505"
                 CornerRadius="0,0,0,20">
-            <Button Content="Button" HorizontalAlignment="Left" Margin="400,225,0,0" VerticalAlignment="Top" Height="63" Width="98"/>
+            <GroupBox Header="قائمة الطلبات" Margin="100,40,100,40" FlowDirection="RightToLeft" Foreground="#FFDDC7AB" BorderBrush="#FFDDC7AB" FontSize="16">
+                <DataGrid x:Name="OrdersDataGrid"
+                          AutoGenerateColumns="False"
+                          IsReadOnly="True"
+                          CanUserAddRows="False"
+                          Margin="10"
+                          Foreground="#FF3F1D0C"
+                          Background="#3F1D0C"
+                          RowBackground="#ffffff"
+                          ColumnHeaderHeight="30"
+                          ColumnHeaderStyle="{x:Null}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="الرقم" Binding="{Binding ID}" Width="Auto"/>
+                        <DataGridTextColumn Header="السعر" Binding="{Binding Price}" Width="Auto"/>
+                        <DataGridTextColumn Header="الموظف" Binding="{Binding Emp}" Width="*" />
+                        <DataGridTextColumn Header="الوقت" Binding="{Binding Time}" Width="*" />
+                    </DataGrid.Columns>
+                </DataGrid>
+
+
+            </GroupBox>
         </Border>
     </Grid>
 </Page>

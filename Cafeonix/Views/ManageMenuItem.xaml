@@ -1,0 +1,74 @@
+﻿<Page x:Class="Cafeonix.Views.ManageMenuItems"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:Cafeonix.Views"
+        mc:Ignorable="d"
+        d:DesignHeight="550" d:DesignWidth="650"
+        FontFamily="pack://application:,,,/Fonts/#Almarai Bold"
+        Title="ManageMenuItems" Background="White">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <GroupBox Header="قائمة الأصناف" Margin="22,25,22,25" FlowDirection="RightToLeft" Foreground="#FFDDC7AB" BorderBrush="#FFDDC7AB" FontSize="16">
+            <DataGrid x:Name="MenuItemsGrid"
+              ItemsSource="{Binding MenuItems}"
+              AutoGenerateColumns="False"
+              SelectionChanged="MenuItemsGrid_SelectionChanged"
+              IsReadOnly="True"
+              CanUserAddRows="False"
+              Margin="10"
+              Foreground="#FF3F1D0C"
+              Background="#3F1D0C"
+              RowBackground="#ffffff"
+              ColumnHeaderHeight="30"
+              ColumnHeaderStyle="{x:Null}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="Auto"/>
+                    <DataGridTextColumn Header="Name" Binding="{Binding Name}" Width="*"/>
+                    <DataGridTextColumn Header="Price" Binding="{Binding Price}" Width="Auto"/>
+                    <DataGridTextColumn Header="Category" Binding="{Binding Category}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+
+        </GroupBox>
+
+        <StackPanel Grid.Row="1" Orientation="Vertical" >
+            <WrapPanel  HorizontalAlignment="Center">
+                <StackPanel Margin="10">
+                    <TextBlock Text="ID:" Width="60"/>
+                    <TextBox x:Name="IdTextBox" IsReadOnly="True"/>
+                </StackPanel>
+                <StackPanel Margin="10">
+                    <TextBlock Text="Name:" Width="110"/>
+                    <TextBox x:Name="NameTextBox"/>
+                </StackPanel>
+                <StackPanel Margin="10">
+                    <TextBlock Text="Price:"  Width="90"/>
+                    <TextBox x:Name="PriceTextBox"/>
+                </StackPanel>
+                <StackPanel Margin="10">
+                    <TextBlock Text="Image Path:"  Width="110"/>
+                    <TextBox x:Name="ImagePathTextBox"  Width="150"/>
+                </StackPanel>
+                <StackPanel Margin="10">
+                    <TextBlock Text="Category:" Width="90"/>
+                    <TextBox x:Name="CategoryTextBox" Width="90"/>
+                </StackPanel>
+            </WrapPanel>
+
+            <WrapPanel HorizontalAlignment="Center" Margin="0,10,0,0">
+                <Button Content="جديد" Click="NewButton_Click" Margin="5"  Width="80"/>
+                <Button Content="إضافة" Click="AddButton_Click" Margin="5"  Width="80"/>
+                <Button Content="تعديل" Click="EditButton_Click" Margin="5"  Width="80"/>
+                <Button Content="حذف" Click="DeleteButton_Click" Margin="5"  Width="80"/>
+            </WrapPanel>
+        </StackPanel>
+    </Grid>
+</Page>
