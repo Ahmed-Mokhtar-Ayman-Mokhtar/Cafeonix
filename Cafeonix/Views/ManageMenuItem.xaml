@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         d:DesignHeight="550" d:DesignWidth="650"
         FontFamily="pack://application:,,,/Fonts/#Almarai Bold"
-        Title="ManageMenuItems" Background="White">
+        Title="ManageMenuItems" Background="#FFDDC7AB">
 
     <Grid Margin="20">
         <Grid.RowDefinitions>
@@ -15,19 +15,20 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <GroupBox Header="قائمة الأصناف" Margin="22,25,22,25" FlowDirection="RightToLeft" Foreground="#FFDDC7AB" BorderBrush="#FFDDC7AB" FontSize="16">
+        <GroupBox Header="قائمة الأصناف" Margin="22,25,22,25" FlowDirection="RightToLeft" Foreground="#FF3F1D0C" FontSize="16" BorderBrush="#FF3F1D0C" Background="#FFDDC7AB">
             <DataGrid x:Name="MenuItemsGrid"
-              ItemsSource="{Binding MenuItems}"
-              AutoGenerateColumns="False"
-              SelectionChanged="MenuItemsGrid_SelectionChanged"
-              IsReadOnly="True"
-              CanUserAddRows="False"
-              Margin="10"
-              Foreground="#FF3F1D0C"
-              Background="#3F1D0C"
-              RowBackground="#ffffff"
-              ColumnHeaderHeight="30"
-              ColumnHeaderStyle="{x:Null}">
+                      BorderThickness="0"
+                      ItemsSource="{Binding MenuItems}"
+                      AutoGenerateColumns="False"
+                      SelectionChanged="MenuItemsGrid_SelectionChanged"
+                      IsReadOnly="True"
+                      CanUserAddRows="False"
+                      Margin="10"
+                      Foreground="#FF3F1D0C"
+                      Background="#3F1D0C"
+                      RowBackground="#FFDDC7AB"
+                      ColumnHeaderHeight="30"
+                      ColumnHeaderStyle="{x:Null}">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="Auto"/>
                     <DataGridTextColumn Header="Name" Binding="{Binding Name}" Width="*"/>
@@ -42,32 +43,64 @@
         <StackPanel Grid.Row="1" Orientation="Vertical" >
             <WrapPanel  HorizontalAlignment="Center">
                 <StackPanel Margin="10">
-                    <TextBlock Text="ID:" Width="60"/>
-                    <TextBox x:Name="IdTextBox" IsReadOnly="True"/>
+                    <TextBlock Text="ID:" Width="60" Foreground="#FF3F1D0C" FontFamily="Almarai Bold" Margin="0,2"/>
+                    <TextBox x:Name="IdTextBox" IsReadOnly="True" BorderBrush="{x:Null}" Width="64">
+                        <TextBox.Background>
+                            <SolidColorBrush Color="White" Opacity="0.8"/>
+                        </TextBox.Background>
+                    </TextBox>
+
                 </StackPanel>
                 <StackPanel Margin="10">
-                    <TextBlock Text="Name:" Width="110"/>
-                    <TextBox x:Name="NameTextBox"/>
+                    <TextBlock Text=" Name:" Width="110" Foreground="#FF3F1D0C" FontFamily="Almarai Bold" Margin="0,2"/>
+                    <TextBox x:Name="NameTextBox" BorderBrush="{x:Null}" Width="110">
+                        <TextBox.Background>
+                            <SolidColorBrush Color="White" Opacity="0.8"/>
+                        </TextBox.Background>
+                    </TextBox>
                 </StackPanel>
                 <StackPanel Margin="10">
-                    <TextBlock Text="Price:"  Width="90"/>
-                    <TextBox x:Name="PriceTextBox"/>
+                    <TextBlock Text=" Price:"  Width="90" Foreground="#FF3F1D0C" FontFamily="Almarai Bold" Margin="0,2"/>
+                    <TextBox x:Name="PriceTextBox" BorderBrush="{x:Null}">
+                        <TextBox.Background>
+                            <SolidColorBrush Color="White" Opacity="0.8"/>
+                        </TextBox.Background>
+                    </TextBox>
                 </StackPanel>
                 <StackPanel Margin="10">
-                    <TextBlock Text="Image Path:"  Width="110"/>
-                    <TextBox x:Name="ImagePathTextBox"  Width="150"/>
+                    <TextBlock Text=" Image Path:"  Width="150" Foreground="#FF3F1D0C" FontFamily="Almarai Bold" Margin="0,2"/>
+                    <TextBox x:Name="ImagePathTextBox"  Width="150" BorderBrush="{x:Null}">
+                        <TextBox.Background>
+                            <SolidColorBrush Color="White" Opacity="0.8"/>
+                        </TextBox.Background>
+                    </TextBox>
                 </StackPanel>
                 <StackPanel Margin="10">
-                    <TextBlock Text="Category:" Width="90"/>
-                    <TextBox x:Name="CategoryTextBox" Width="90"/>
+                    <TextBlock Text="Category:" Width="88" Foreground="#FF3F1D0C" FontFamily="Almarai Bold" Margin="0,2"/>
+                    <TextBox x:Name="CategoryTextBox" Width="90" BorderBrush="{x:Null}">
+                        <TextBox.Background>
+                            <SolidColorBrush Color="White" Opacity="0.8"/>
+                        </TextBox.Background>
+                    </TextBox>
                 </StackPanel>
             </WrapPanel>
 
-            <WrapPanel HorizontalAlignment="Center" Margin="0,10,0,0">
-                <Button Content="جديد" Click="NewButton_Click" Margin="5"  Width="80"/>
-                <Button Content="إضافة" Click="AddButton_Click" Margin="5"  Width="80"/>
-                <Button Content="تعديل" Click="EditButton_Click" Margin="5"  Width="80"/>
-                <Button Content="حذف" Click="DeleteButton_Click" Margin="5"  Width="80"/>
+            <WrapPanel HorizontalAlignment="Center" Margin="0,0,0,0">
+                <Border CornerRadius="10" Background="#FF3F1D0C" Margin="8" Height="32" Width="88">
+                    <Button Click="NewButton_Click" Content="جديد" Margin="3" Background="#FF3F1D0C" Foreground="#FFDDC7AB"  FontSize="16" BorderBrush="{x:Null}" BorderThickness="0,0,0,0"/>
+                </Border>
+
+                <Border CornerRadius="10" Background="#FF3F1D0C" Margin="8" Height="32" Width="88">
+                    <Button Content="إضافة" Click="AddButton_Click" Margin="3" Background="#FF3F1D0C" Foreground="#FFDDC7AB"  FontSize="16" BorderBrush="{x:Null}" BorderThickness="0,0,0,0"/>
+                </Border>
+
+                <Border CornerRadius="10" Background="#FF3F1D0C" Margin="8" Height="32" Width="88">
+                    <Button Content="تعديل" Click="EditButton_Click" Margin="3" Background="#FF3F1D0C" Foreground="#FFDDC7AB"  FontSize="16" BorderBrush="{x:Null}" BorderThickness="0,0,0,0"/>
+                </Border>
+
+                <Border CornerRadius="10" Background="#FF3F1D0C" Margin="8" Height="32" Width="88">
+                    <Button Content="حذف" Click="DeleteButton_Click" Margin="3" Background="#FF3F1D0C" Foreground="#FFDDC7AB"  FontSize="16" BorderBrush="{x:Null}" BorderThickness="0,0,0,0"/>
+                </Border>
             </WrapPanel>
         </StackPanel>
     </Grid>
