@@ -43,14 +43,23 @@ namespace Cafeonix.Views
                         Username = user.Username
                     };
 
-                    var mainViewModel = new MainViewModel(userViewModel);
-                    var mainWindow = new MainWindow
-                    {
-                        DataContext = mainViewModel
-                    };
+                    Window nextWindow;
 
-                    Application.Current.MainWindow = mainWindow;
-                    mainWindow.Show();
+                    if (user.Role == UserRole.Admin)
+                    {
+                        nextWindow = new AdminWindow(); // نافذة المسؤول
+                    }
+                    else
+                    {
+                        var mainViewModel = new MainViewModel(userViewModel);
+                        nextWindow = new MainWindow
+                        {
+                            DataContext = mainViewModel
+                        };
+                    }
+
+                    Application.Current.MainWindow = nextWindow;
+                    nextWindow.Show();
                     this.Close();
                 }
                 else
