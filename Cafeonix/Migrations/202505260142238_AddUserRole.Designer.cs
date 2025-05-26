@@ -7,13 +7,13 @@ namespace Cafeonix.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.5.1")]
-    public sealed partial class InitialCreate : IMigrationMetadata
+    public sealed partial class AddUserRole : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreate));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddUserRole));
         
         string IMigrationMetadata.Id
         {
-            get { return "202505240516180_InitialCreate"; }
+            get { return "202505260142238_AddUserRole"; }
         }
         
         string IMigrationMetadata.Source

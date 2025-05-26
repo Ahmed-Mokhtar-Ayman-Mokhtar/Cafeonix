@@ -65,12 +65,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Compile Include="AdminWindow.xaml.cs">
+      <DependentUpon>AdminWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Data\AppDbContext.cs" />
     <Compile Include="Functions\MenuItemFunctions.cs" />
     <Compile Include="Functions\UserFunctions.cs" />
-    <Compile Include="Migrations\202505240516180_InitialCreate.cs" />
-    <Compile Include="Migrations\202505240516180_InitialCreate.Designer.cs">
-      <DependentUpon>202505240516180_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\202505260142238_AddUserRole.cs" />
+    <Compile Include="Migrations\202505260142238_AddUserRole.Designer.cs">
+      <DependentUpon>202505260142238_AddUserRole.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\MenuItem.cs" />
@@ -79,6 +82,9 @@
     <Compile Include="Models\User.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\UserViewModel.cs" />
+    <Compile Include="Views\AdminPages\ManageUsersPage.xaml.cs">
+      <DependentUpon>ManageUsersPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
@@ -97,6 +103,10 @@
     <Compile Include="Views\ReportPage.xaml.cs">
       <DependentUpon>ReportPage.xaml</DependentUpon>
     </Compile>
+    <Page Include="AdminWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -112,6 +122,10 @@
     <Page Include="Resources\Page.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\AdminPages\ManageUsersPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\HomePage.xaml">
       <SubType>Designer</SubType>
@@ -152,8 +166,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Migrations\202505240516180_InitialCreate.resx">
-      <DependentUpon>202505240516180_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202505260142238_AddUserRole.resx">
+      <DependentUpon>202505260142238_AddUserRole.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

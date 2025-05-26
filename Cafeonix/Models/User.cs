@@ -8,6 +8,11 @@ using System.Threading.Tasks;
 
 namespace Cafeonix.Models
 {
+    public enum UserRole
+    {
+        Admin, //0
+        User   //1
+    }
     public class User
     {
         [Key]
@@ -21,6 +26,9 @@ namespace Cafeonix.Models
         [Required]
         [MaxLength(255)]
         public String Password { get; set; }
+
+        [Required]
+        public UserRole Role { get; set; } = UserRole.User; // القيمة الافتراضية: مستخدم عادي
 
     }
 }

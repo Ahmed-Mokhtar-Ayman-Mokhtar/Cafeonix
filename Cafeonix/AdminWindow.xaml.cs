@@ -11,19 +11,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Cafeonix
 {
-
-    public partial class MainWindow : Window
+    /// <summary>
+    /// Interaction logic for AdminWindow.xaml
+    /// </summary>
+    public partial class AdminWindow : Window
     {
-        public MainWindow()
+        public AdminWindow()
         {
             InitializeComponent();
             MainFrame.Navigate(new Uri("Views/HomePage.xaml", UriKind.Relative));
-            home_btn.Background = new SolidColorBrush(Color.FromRgb(51, 21, 5));
         }
 
         private void NavButton_Click(object sender, RoutedEventArgs e)
