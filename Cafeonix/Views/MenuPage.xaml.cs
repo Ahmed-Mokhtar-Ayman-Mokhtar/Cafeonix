@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using System.Xml.Linq;
 using Cafeonix.Data;
 using Cafeonix.Models;
+using Cafeonix.ViewModels;
 
 namespace Cafeonix.Views
 {
@@ -80,10 +83,49 @@ namespace Cafeonix.Views
         }
 
 
-        // تأكيد الطلب (فقط نموذجي)
+        // زر تأكيد الطلب
         private void ConfirmOrder_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show($"تم تأكيد الطلب بمبلغ {TotalAmount:C}", "نجاح", MessageBoxButton.OK, MessageBoxImage.Information);
+            //  مسار bin\Debug
+            string exeDir = AppDomain.CurrentDomain.BaseDirectory;
+            //  الصعود لمجلد المشروع
+            string projectDir = Path.GetFullPath(Path.Combine(exeDir, "..", ".."));
+            //  ملف Orders.xml في جذر المشروع
+            string path = Path.Combine(projectDir, "OrderArchives.xml");
+
+            //  تحميل أو إنشاء مستند XML
+            XDocument doc;
+            if (File.Exists(path))
+                doc = XDocument.Load(path);
+            else
+                doc = new XDocument(new XElement("Order"));
+
+            //  حساب الـ ID التالي
+            int nextId = 1;
+            var existing = doc.Root.Elements("Order");
+            if (existing.Any())
+                nextId = existing.Max(x => (int)x.Element("ID")) + 1;
+
+            //  جلب اسم المستخدم من MainViewModel
+            var mainVm = (Application.Current.MainWindow as MainWindow)?
+                             .DataContext as MainViewModel;
+            string cashierName = mainVm?.CurrentUser.Username ?? "Unknown";
+
+            //  تجهيز السجل الجديد
+            var newOrder = new XElement("Order",
+                new XElement("ID", nextId),
+                new XElement("Price", TotalAmount),
+                new XElement("Emp", cashierName),
+                new XElement("Time", DateTime.Now.ToString("yyyy-MM-dd      HH:mm:ss"))
+            );
+
+            //  إضافة السجل وحفظ الملف
+            doc.Root.Add(newOrder);
+            doc.Save(path);
+
+            //  إعلام المستخدم وتنظيف الطلب
+            MessageBox.Show($"تم تأكيد الطلب بمبلغ {TotalAmount:C}", "نجاح",
+                            MessageBoxButton.OK, MessageBoxImage.Information);
             CurrentOrder.Clear();
             TotalTextBlock.Text = $"المجموع: {TotalAmount:C}";
         }

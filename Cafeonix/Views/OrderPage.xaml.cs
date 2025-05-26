@@ -1,28 +1,41 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Cafeonix.Views
 {
-    /// <summary>
-    /// Interaction logic for OrderPage.xaml
-    /// </summary>
     public partial class OrderPage : Page
     {
         public OrderPage()
         {
             InitializeComponent();
+            this.Loaded += OrderPage_Loaded;
         }
+
+        private void OrderPage_Loaded(object sender, RoutedEventArgs e)
+        {
+            // 1. مسار bin\Debug
+            string exeDir = AppDomain.CurrentDomain.BaseDirectory;
+            // 2. الصعود لمجلد المشروع (Debug → bin → جذر المشروع)
+            string projectDir = Path.GetFullPath(Path.Combine(exeDir, "..", ".."));
+            // 3. بناء المسار إلى Orders.xml في جذر المشروع
+            string path = Path.Combine(projectDir, "OrderArchives.xml");
+
+            if (File.Exists(path))
+            {
+                var ds = new DataSet();
+                ds.ReadXml(path);
+                OrdersDataGrid.ItemsSource = ds.Tables[0].DefaultView;
+            }
+            else
+            {
+                MessageBox.Show($"لم يتم العثور على ملف الطلبات:\n{path}",
+                                "خطأ", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+
     }
 }
