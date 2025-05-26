@@ -37,9 +37,9 @@
                     <Image Source="/Resources/Images/Caféonix Logo2.png" Width="240" Height="240" />
                 </StackPanel>
                 <Label Content=":اسم المستخدم" Foreground="#DDC7AB" FontFamily="Almarai Bold" FontSize="16" HorizontalAlignment="Right" Width="120" Height="28"/>
-                <TextBox x:Name="UsernameBox" Height="44" Background="#331505" Foreground="White" BorderBrush="{x:Null}"/>
+                <TextBox x:Name="UsernameBox" Height="44" Background="#331505" Foreground="White" BorderBrush="{x:Null}" VerticalContentAlignment="Center"/>
                 <Label Content=":كلمة المرور" Foreground="#DDC7AB" Margin="0,10,0,0" FontFamily="Almarai Bold" FontSize="16" HorizontalAlignment="Right" Width="93" Height="28"/>
-                <PasswordBox x:Name="PasswordBox" Height="44" Background="#331505" Foreground="White" BorderBrush="{x:Null}"/>
+                <PasswordBox x:Name="PasswordBox" Height="44" Background="#331505" Foreground="White" BorderBrush="{x:Null}" VerticalContentAlignment="Center"/>
                 <Border CornerRadius="10" Background="#DDC7AB" Margin="0,40,0,0" Height="44" Width="320">
                     <Button Content="دخول" Background="#DDC7AB" Foreground="#3F1D0C" Click="LoginButton_Click" Height="38" Width="310" FontFamily="Almarai Bold" FontSize="18" BorderBrush="{x:Null}" BorderThickness="0,0,0,0"/>
                 </Border>
