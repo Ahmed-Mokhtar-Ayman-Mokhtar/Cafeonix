@@ -10,9 +10,9 @@
       Title="OrderPage">
 
     <Grid>
-        <Border Background="#331505"
+        <Border Background="#FFDDC7AB"
                 CornerRadius="0,0,0,20">
-            <GroupBox Header="قائمة الطلبات" Margin="100,40,100,40" FlowDirection="RightToLeft" Foreground="#FFDDC7AB" BorderBrush="#FFDDC7AB" FontSize="16">
+            <GroupBox Header="قائمة الطلبات" Margin="100,40,100,40" FlowDirection="RightToLeft" Foreground="#FF3F1D0C" BorderBrush="#FFDDC7AB" FontSize="16">
                 <DataGrid x:Name="OrdersDataGrid"
                           AutoGenerateColumns="False"
                           IsReadOnly="True"
@@ -20,7 +20,7 @@
                           Margin="10"
                           Foreground="#FF3F1D0C"
                           Background="#3F1D0C"
-                          RowBackground="#ffffff"
+                          RowBackground="#FFDDC7AB"
                           ColumnHeaderHeight="30"
                           ColumnHeaderStyle="{x:Null}">
                     <DataGrid.Columns>

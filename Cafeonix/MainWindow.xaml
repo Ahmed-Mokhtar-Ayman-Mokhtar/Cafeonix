@@ -16,19 +16,19 @@
     <Grid>
         <Border Background="#3F1D0C"
                 CornerRadius="20"  MouseDown="Window_MouseDown">
-                        <StackPanel Orientation="Horizontal" Height="50" VerticalAlignment="Top">
-                
-            <Button Background="Transparent" Padding="15" HorizontalAlignment="Left" Margin="10,0,0,0" Click="Close_Click" VerticalAlignment="Top" Height="50" Width="50" BorderThickness="0">
-                <Image Source="/Resources/Images/shutdown.png" Stretch="Uniform"/>
-            </Button>
+            <StackPanel Orientation="Horizontal" Height="50" VerticalAlignment="Top">
+
+                <Button Background="Transparent" Padding="15" HorizontalAlignment="Left" Margin="10,0,0,0" Click="Close_Click" VerticalAlignment="Top" Height="50" Width="50" BorderThickness="0">
+                    <Image Source="/Resources/Images/shutdown.png" Stretch="Uniform"/>
+                </Button>
                 <Button Background="Transparent" Padding="15" HorizontalAlignment="Left" Margin="02,0,0,0" Click="Minimize_Click" VerticalAlignment="Top" Height="50" Width="50" BorderThickness="0">
-                <Image Source="/Resources/Images/minus.png" Stretch="Uniform"/>
-            </Button>
+                    <Image Source="/Resources/Images/minus.png" Stretch="Uniform"/>
+                </Button>
             </StackPanel>
         </Border>
         <Grid>
-        
-        <Grid.ColumnDefinitions>
+
+            <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <!-- القائمة الجانبية -->
                 <ColumnDefinition Width="200"/>
@@ -38,23 +38,23 @@
             <Frame x:Name="MainFrame" Height="550" VerticalAlignment="Bottom" BorderThickness="0" Grid.Column="0" NavigationUIVisibility="Hidden"/>
 
             <StackPanel  Grid.Column="1" VerticalAlignment="Stretch">
-                
+
                 <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="200">
                     <Image Source="/Resources/Images/Caféonix Logo2.png" Width="150" Height="200" Margin="0,05"/>
                 </StackPanel>
 
-                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="ButtonsPanel">
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" x:Name="ButtonsPanel" Height="398">
 
-                    <Button x:Name="home_btn" Content="الصفحة الرئيسية" Background="#3F1D0C" Foreground="#DDC7AB" Tag="Views/HomePage.xaml" Click="NavButton_Click" Width="200" Height="50" BorderThickness="0" />
-                    <Button Content="قائمة الأصناف" Background="#3F1D0C" Foreground="#DDC7AB" Tag="Views/MenuPage.xaml" Click="NavButton_Click" Width="200" Height="50" BorderThickness="0" />
+                    <Button x:Name="home_btn" Content="قائمة الأصناف" Background="#3F1D0C" Foreground="#DDC7AB" Tag="Views/MenuPage.xaml" Click="NavButton_Click" Width="200" Height="50" BorderThickness="0" />
                     <Button Content="إدارة الأصناف" Background="#3F1D0C" Foreground="#DDC7AB" Tag="Views/ManageMenuItem.xaml" Click="NavButton_Click" Width="200" Height="50" BorderThickness="0" />
                     <Button Content="ارشيف الطلبات" Background="#3F1D0C" Foreground="#DDC7AB" Tag="Views/OrderPage.xaml" Click="NavButton_Click" Width="200" Height="50" BorderThickness="0" />
 
-
-                    <Button Content="تسجيل الخروج" Margin="0,150,0,0"  Background="#3F1D0C" Foreground="#DDC7AB"
-                            Click="Logout_Click" Width="200" Height="50" BorderThickness="0" />
+                    <Border CornerRadius="10" Background="#DDC7AB" Margin="0,200,0,0" Height="40" Width="184">
+                        <Button Content="تسجيل الخروج"  Background="#DDC7AB" Foreground="#3F1D0C" FontSize="18" BorderBrush="{x:Null}"
+                            Click="Logout_Click" Width="180" Height="30" BorderThickness="0" />
+                    </Border>
                 </StackPanel>
-                
+
             </StackPanel>
 
         </Grid>
