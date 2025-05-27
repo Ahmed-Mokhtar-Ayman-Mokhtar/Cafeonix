@@ -23,7 +23,7 @@ namespace Cafeonix
         public AdminWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new Uri("Views/HomePage.xaml", UriKind.Relative));
+            MainFrame.Navigate(new Uri("Views/MenuPage.xaml", UriKind.Relative));
         }
 
         private void NavButton_Click(object sender, RoutedEventArgs e)
