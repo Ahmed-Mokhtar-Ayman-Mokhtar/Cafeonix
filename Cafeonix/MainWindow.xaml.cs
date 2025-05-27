@@ -22,7 +22,7 @@ namespace Cafeonix
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new Uri("Views/HomePage.xaml", UriKind.Relative));
+            MainFrame.Navigate(new Uri("Views/MenuPage.xaml", UriKind.Relative));
             home_btn.Background = new SolidColorBrush(Color.FromRgb(51, 21, 5));
         }
 
