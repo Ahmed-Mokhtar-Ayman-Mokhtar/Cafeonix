@@ -1,18 +1,9 @@
 ﻿using Cafeonix.Views;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Cafeonix
 {
@@ -22,7 +13,7 @@ namespace Cafeonix
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new Uri("Views/HomePage.xaml", UriKind.Relative));
+            MainFrame.Navigate(new Uri("Views/MenuPage.xaml", UriKind.Relative));
             home_btn.Background = new SolidColorBrush(Color.FromRgb(51, 21, 5));
         }
 

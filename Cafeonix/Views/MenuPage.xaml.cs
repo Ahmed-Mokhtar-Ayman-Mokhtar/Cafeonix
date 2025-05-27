@@ -6,7 +6,6 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Xml.Linq;
 using Cafeonix.Data;
-using Cafeonix.Models;
 using Cafeonix.ViewModels;
 
 namespace Cafeonix.Views
