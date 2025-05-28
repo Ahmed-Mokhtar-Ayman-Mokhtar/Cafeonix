@@ -48,6 +48,7 @@
 
 					<Button Content="قائمة الأصناف" Background="#3F1D0C" Foreground="#DDC7AB" Tag="Views/MenuPage.xaml" Click="NavButton_Click" Width="200" Height="50" BorderThickness="0" />
 					<Button Content="إدارة الأصناف" Background="#3F1D0C" Foreground="#DDC7AB" Tag="Views/ManageMenuItem.xaml" Click="NavButton_Click" Width="200" Height="50" BorderThickness="0" />
+                    <Button Content="إدارة المستخدمين" Background="#3F1D0C" Foreground="#DDC7AB" Tag="Views\AdminPages\ManageUsersPage.xaml" Click="NavButton_Click" Width="200" Height="50" BorderThickness="0" />
                     <Button Content="ارشيف الطلبات" Background="#3F1D0C" Foreground="#DDC7AB" Tag="Views/OrderPage.xaml" Click="NavButton_Click" Width="200" Height="50" BorderThickness="0" />
 
                     <Border CornerRadius="10" Background="#DDC7AB" Margin="0,200,0,0" Height="40" Width="184">
